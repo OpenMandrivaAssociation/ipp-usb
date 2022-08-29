@@ -19,6 +19,8 @@ Source0:	https://github.com/OpenPrinting/ipp-usb/archive/refs/tags/%{version}.ta
 # tar cJf godeps-for-ipp-usb-%{version}.tar.xz .godeps
 Source1:	godeps-for-ipp-usb.tar.xz
 BuildRequires:	golang make
+BuildRequires:	pkgconfig(avahi-client)
+BuildRequires:	pkgconfig(libusb-1.0)
 
 %description
 IPP-over-USB allows using the IPP protocol, normally designed for network
