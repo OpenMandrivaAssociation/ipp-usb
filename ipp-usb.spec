@@ -61,6 +61,8 @@ export GOPROXY="file://`pwd`/.godeps"
 %make_build
 
 %install
+export GOPATH="`pwd`/.godeps"
+export GOPROXY="file://`pwd`/.godeps"
 %make_install
 mkdir -p %{buildroot}%{_bindir}
 mv %{buildroot}/sbin/* %{buildroot}%{_bindir}
