@@ -54,6 +54,8 @@ And this is what the ipp-usb program actually does.
 %prep
 %autosetup -p1
 tar xf %{S:1}
+find .godeps -type d |xargs chmod 0755
+find .godeps -type f |xargs chmod 0644
 
 %build
 export GOPATH="`pwd`/.godeps"
