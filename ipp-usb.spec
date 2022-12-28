@@ -4,7 +4,7 @@
 #define pre rc2
 
 Name:		ipp-usb
-Version:	0.9.22
+Version:	0.9.23
 Release:	1
 Summary:	IPP-over-USB implementation
 License:	MIT
